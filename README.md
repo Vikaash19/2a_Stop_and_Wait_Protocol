@@ -28,12 +28,14 @@ while True:
     break
 ```
 ### Server
+```
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
 while True:
   print(s.recv(1024).decode())
   s.send("Acknowledgement Recived".encode())
+```
 ## OUTPUT
 ### Client
 ![exp 1a client](https://github.com/user-attachments/assets/5ecdf4fa-589d-4555-8963-b5ac4c713558)
